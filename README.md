@@ -1,4 +1,4 @@
-# MispisAPP — Подсистема управления производством мотоциклов
+# MotoFlow — Подсистема управления производством мотоциклов
 
 Десктопное JavaFX-приложение для автоматизации полного цикла производства мотоциклов:
 управление заказами клиентов, учёт материалов и компонентов, контроль сборки, тестирования
@@ -138,8 +138,8 @@ materials ── 1:N ─── suppliers
 ### 1. Клонирование
 
 ```bash
-git clone https://github.com/TweetyDMG/MispisAPP.git
-cd MispisAPP
+git clone https://github.com/TweetyDMG/motoflow.git
+cd motoflow
 ```
 
 ### 2. Настройка базы данных
@@ -186,7 +186,7 @@ export DB_HOST=localhost DB_PORT=5433 DB_NAME=motorcycle_production
 ```bash
 ./mvnw clean package
 java --module-path target/classes \
-     -m motorcycle.production.subsystem.mispisapp/\
+     -m motorcycle.production.subsystem.motoflow/\
         motorcycle.production.subsystem.MotorcycleProductionSubsystemStructure
 ```
 
@@ -206,7 +206,7 @@ java --module-path target/classes \
 ## 📦 Структура проекта
 
 ```
-MispisAPP/
+MotoFlow/
 ├── pom.xml                         # Maven (Java 23, JavaFX 17)
 ├── mvnw / mvnw.cmd                 # Maven Wrapper
 ├── .env / .env.example             # Конфигурация БД

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>motorcycle.production.subsystem</groupId>
-    <artifactId>MispisAPP</artifactId>
+    <artifactId>motoflow</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>MispisAPP</name>
+    <name>MotoFlow</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

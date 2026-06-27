@@ -1,4 +1,4 @@
-module motorcycle.production.subsystem.mispisapp {
+module motorcycle.production.subsystem.motoflow {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
