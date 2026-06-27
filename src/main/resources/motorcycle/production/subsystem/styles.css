@@ -1,0 +1,27 @@
+VBox {
+    -fx-padding: 20;
+    -fx-background-color: #f4f4f4;
+}
+
+Label {
+    -fx-font-size: 14px;
+}
+
+TextField {
+    -fx-pref-width: 200px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+}
+
+Button {
+    -fx-pref-width: 170px;
+    -fx-background-color: #0078d7;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+    -fx-border-radius: 3px;
+}
+
+Button:hover {
+    -fx-background-color: #005ba1;
+}

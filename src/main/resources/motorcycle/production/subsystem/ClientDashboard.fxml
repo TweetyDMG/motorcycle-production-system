@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="motorcycle.production.subsystem.ui.ClientDashboardController">
+    <Label text="Клиентская панель" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Создать заказ"/>
+    <ChoiceBox fx:id="motorcycleModelChoiceBox">
+        <items>
+            <fx:reference source="CBR1000RR"/>
+            <fx:reference source="YZF-R1"/>
+            <fx:reference source="Ninja ZX-10R"/>
+            <fx:reference source="GSX-R1000"/>
+            <fx:reference source="Panigale V4"/>
+        </items>
+    </ChoiceBox>
+    <Button text="Создать заказ" onAction="#handleCreateOrder"/>
+    <Label text="Мои заказы"/>
+    <TableView fx:id="ordersTable">
+        <columns>
+            <TableColumn fx:id="orderIdColumn" text="ID заказа"/>
+            <TableColumn fx:id="motorcycleIdColumn" text="Модель мотоцикла"/>
+            <TableColumn fx:id="statusColumn" text="Статус"/>
+        </columns>
+    </TableView>
+    <Button text="Обновить контактную информацию" onAction="#handleUpdateContact"/>
+</VBox>

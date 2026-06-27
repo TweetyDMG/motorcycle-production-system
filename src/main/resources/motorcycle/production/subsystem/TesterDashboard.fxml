@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="motorcycle.production.subsystem.ui.TesterDashboardController">
+    <Label text="Панель тестировщика" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Тестировать мотоцикл"/>
+    <TextField fx:id="testIdField" promptText="ID теста"/>
+    <TextField fx:id="resultField" promptText="Результат"/>
+    <TextField fx:id="issuesField" promptText="Проблемы"/>
+    <Button text="Выполнить тест" onAction="#handlePerformTest"/>
+    <Button text="Устранить проблемы" onAction="#handleFixIssues"/>
+</VBox>

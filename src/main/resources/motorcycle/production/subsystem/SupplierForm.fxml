@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="motorcycle.production.subsystem.ui.SupplierFormController">
+    <Label text="Управление поставщиками" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="ID поставщика"/>
+    <TextField fx:id="supplierIdField"/>
+    <Label text="ID материала"/>
+    <TextField fx:id="materialIdField"/>
+    <Label text="Название"/>
+    <TextField fx:id="nameField"/>
+    <Label text="Контактная информация"/>
+    <TextField fx:id="contactInfoField"/>
+    <Label text="Количество для поставки"/>
+    <TextField fx:id="quantityField"/>
+    <Button text="Создать поставщика" onAction="#handleCreateSupplier"/>
+    <Button text="Найти поставщика" onAction="#handleFindSupplier"/>
+    <Button text="Поставить материал" onAction="#handleSupplyMaterial"/>
+    <Button text="Удалить поставщика" onAction="#handleDeleteSupplier"/>
+</VBox>
